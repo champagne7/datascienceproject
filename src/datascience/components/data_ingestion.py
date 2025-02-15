@@ -17,7 +17,7 @@ class DataIngestion:
             )
             logger.info(f"{filename} downloaded! with the following info: \n{headers}")
         else:
-            logger.info(f"{filename} already exists")
+            logger.info(f"File Already Exists")
 
     def extract_zip_file(self):
         unzip_path = self.config.unzip_dir
